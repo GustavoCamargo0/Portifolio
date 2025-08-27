@@ -1,0 +1,13 @@
+.sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: bold;
+}
+.navbar{
+    margin-left: 550px;
+    justify-content: space-evenly;
+    color: black;
+    text-decoration: none;
+}
