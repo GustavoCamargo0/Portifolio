@@ -1,35 +1,43 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: #3D2B1F;
-}
-
-.sobre {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: bold;
-    background-color:#c2e0bc;
-    justify-content: space-evenly;
-    width: 100%; 
-    margin: 0; 
+    color: black;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.navbar {
-    color: black;
-    text-decoration: none;
+#cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color:#D0F0C0;
+    justify-content: space-evenly;
+    width: 100%; 
+    box-sizing: border-box;
 }
-.navbar a{
-    font-size: bold;
+
+ a{
     margin: 0 10px;
-}
-
-a {
+    justify-content: space-between;
     color: black;
     text-decoration: none;
 }
 
+#infos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#infobox{
+    background-color: #9FE2BF;
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+}
 .projetos {
     display: flex;
     justify-content: center;
@@ -42,7 +50,7 @@ a {
     justify-content: center;
     text-align: center;
     align-items: center;
-    background-color: #f9efce;
+    background-color: #B0FFB0;
     width: 400px;
     height: 350px;
     padding: 10px;
