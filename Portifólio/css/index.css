@@ -1,6 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
+    background-color: #9FE2BF;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    background-color:#D0F0C0;
+    background-color:#50C878;
     justify-content: space-evenly;
     width: 100%; 
     box-sizing: border-box;
@@ -30,7 +31,7 @@ body {
     align-items: center;
 }
 #infobox{
-    background-color: #9FE2BF;
+    background-color: white;
     width: 400px;
     height: 300px;
     padding: 10px;
@@ -46,11 +47,11 @@ body {
 }
 
 .projectbox {
+    background-color: white;
     flex: 1;
     justify-content: center;
     text-align: center;
     align-items: center;
-    background-color: #9FE2BF;
     width: 400px;
     height: 350px;
     padding: 10px;
