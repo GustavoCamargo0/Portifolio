@@ -1,10 +1,21 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    background-color: #9FE2BF;
+   background-color: #F2F2F2;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+ h1,h2, h3, h4, h5, h6 {
+    color: #2E7D32;
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-decoration-color: #A5D6A7;
+    text-underline-offset: 10px;
 }
 
 #cabecalho {
@@ -12,17 +23,43 @@ body {
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    background-color:#50C878;
+    background-color:#2E7D32;
     justify-content: space-evenly;
     width: 100%; 
     box-sizing: border-box;
+    color: white;
+}
+#cabecalho h1{
+  color: white;
+  text-decoration: none;
 }
 
+#intro{
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.navbar a:hover {
+    background-color: rgba(169, 182, 176, 0.3); 
+    transition: all 0.3s ease;
+    padding: 6px;
+    color: white;
+    border-radius: 10px;
+}
  a{
-    margin: 0 10px;
+    margin: 30px;
     justify-content: space-between;
-    color: black;
     text-decoration: none;
+}
+
+.projectbox a{
+    color:#3CB371 ;
+}
+
+ p{
+    color: #424242;
 }
 
 #infos{
@@ -37,7 +74,23 @@ body {
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px black;
+    box-shadow: 5px 5px 20px gray;
+}
+
+#skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#skillbox{
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px gray;
+    text-align: center;
 }
 .projetos {
     display: flex;
@@ -52,7 +105,7 @@ body {
     justify-content: center;
     text-align: center;
     align-items: center;
-    width: 400px;
+    width: 50px;
     height: 350px;
     padding: 10px;
     border-radius: 10px;
