@@ -1,15 +1,21 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-   background-color: #F2F2F2;
+    background-color: #F2F2F2;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
- h1,h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #2E7D32;
 }
-h1{
+
+h1 {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -23,66 +29,80 @@ h1{
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    background-color:#2E7D32;
+    background-color: #2E7D32;
     justify-content: space-evenly;
-    width: 100%; 
+    width: 100%;
     box-sizing: border-box;
     color: white;
 }
-#cabecalho h1{
-  color: white;
-  text-decoration: none;
+
+#cabecalho h1 {
+    color: white;
+    text-decoration: none;
 }
 
-#intro{
+#intro {
     font-size: 30px;
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 100px;
 
 }
+
 .navbar a:hover {
-    background-color: rgba(169, 182, 176, 0.3); 
+    background-color: rgba(169, 182, 176, 0.3);
     transition: all 0.3s ease;
     padding: 6px;
     color: white;
     border-radius: 10px;
 }
- a{
+
+a {
     margin: 30px;
     justify-content: space-between;
     text-decoration: none;
 }
 
-.projectbox a{
-    color:#3CB371 ;
-}
 
- p{
+p {
     color: #424242;
 }
 
-#infos{
+#infos {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
-#infobox{
+
+#infobox {
+    text-align: justify;
     background-color: white;
-    width: 400px;
-    height: 300px;
+    width: 550px;
+    height: 350px;
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 5px 5px 20px gray;
 }
 
-#skills{
+#skills {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
-#skillbox{
+
+#skillbox {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 5px 5px 20px gray;
     background-color: white;
     width: 200px;
     height: 200px;
@@ -92,54 +112,98 @@ h1{
     box-shadow: 5px 5px 20px gray;
     text-align: center;
 }
+
 .projetos {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.projetos a {
+    font-weight: bold;
+    color: #2E7D32;
+}
+.projetos a:hover {
+    color: #124216;
+    margin-left: 1cm;
+    transition: all 0.3s ease;
+}
+.projetos i {
+    font-size: 20px;
 }
 
 .projectbox {
     background-color: white;
-    flex: 1;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    text-align: center;
     align-items: center;
-    width: 50px;
-    height: 350px;
-    padding: 10px;
+    text-align: justify;
+    width: 350px;
+    height: 400px;
+    padding: 20px;
     border-radius: 10px;
     margin: 5px;
-    box-shadow: 5px 5px 10px black;
+    box-shadow: 5px 5px 20px gray;
 }
 
 
 .ftPoke {
     background-image: url(/Portifólio/assests/poke.jpeg);
     background-size: cover;
-    background-repeat: no-repeat;
     width: 200px;
     height: 150px;
-    margin-left: 130px ;
     border-radius: 10px;
 }
 
 .ftQuiz {
     background-image: url(/Portifólio/assests/quiz.jpeg);
     background-size: cover;
-    background-repeat: no-repeat;
     width: 200px;
     height: 150px;
-    margin-left: 130px ;
     border-radius: 10px;
 }
 
 .ftSpace {
     background-image: url(/Portifólio/assests/space.jpeg);
     background-size: cover;
-    background-repeat: no-repeat;
     width: 200px;
     height: 150px;
-    margin-left: 130px ;
     border-radius: 10px;
+}
+
+i {
+    font-size: 50px;
+    color: #2E7D32;
+    margin-bottom: 10px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Scroll animations */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.scroll-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
